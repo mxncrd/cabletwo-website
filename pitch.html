@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It's Cable Two</title>
+<link rel="stylesheet" href="pitch.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<div class="navbar">
+
+	<div class="topnav" id="myTopnav">
+		<a class="two" href="index.html"><img src="logo-trans.png" alt="Logo"></img>
+		<a class="one" href="index.html">Home</a>
+		<a class="active" href="pitch.html">Pitch</a>
+		<a class="one" href="contact.html">Contact</a>
+		<a class="one" href="https://cabletwo.bigcartel.com" target="_blank">Shop</a>
+		<a class="icon" href="javascript:void(0);" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+	</div>
+
+	<div id="marquee">
+		<div class="ticker"><p>Check this out:</p></div>
+	</div>
+	
+	<div class="bottomnav">
+		<a href="sitemap.html" target="_blank">Site Map</a>
+	</div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<body>
+
+<div class="pitch-form">
+		<h1>Want to stream with Cable Two?</h1>
+	<form action="https://formsubmit.co/52a5e5181a42f2dd4b414f9b16bdb69e" method="POST" />
+<div class="background">
+<div class="form-group">
+	<p>Send us a pitch!
+	<br>Use this form to pitch us your idea.
+		<br><br>Please read the <a href="release.html" target="_blank">terms and conditions</a> before submitting.</p><br>
+	<h2>Name</h2>
+		<input type="text" name="name" class="form-control" placeholder="What should we call you?" required>
+    <h2>Email Address</h2>
+		<input type="text" name="email" class="form-control" placeholder="How should we contact you?" required>
+	<h2>Title of Pitch</h2>
+		<input type="text" name="title" class="form-control" placeholder="A working title is fine." required>
+	<h2>Synopsis</h2>
+		<textarea placeholder="Describe your stream idea. It doesn't have to be a fully finished concept - we’d love to help you develop your idea, both conceptually and technically." class="form-control" name="message" rows="10" required></textarea>	
+	<h2>Visuals & Other Media</h2>
+		<textarea placeholder="This part is optional, but encouraged. Please attach links to any relevant visuals, images, videos, or any other type of media. Example: Title cards, overlay mockups, moodboards, inspiration, and video demonstrations of your stream." class="form-control" name="message" rows="10" required></textarea>
+			<p>By clicking “SUBMIT FORM”, you agree to have read, understand, and agree to the terms and conditions.
+	<br><br><button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+	<br><br>That’s it! Thank you for submitting to Cable Two.<br><br><br></p>
+</div>
+</div>
+</div>
+  
+    </form>	
+
+</body>
+
+
+
+</html> 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>It's Cable Two</title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<div class="navbar">
+
+	<div class="topnav" id="myTopnav">
+		<a class="two" href="index.html"><img src="logo-trans.png" alt="Logo"></img>
+		<a class="active" href="index.html">Home</a>
+		<a class="one" href="pitch.html">Pitch</a>
+		<a class="one" href="contact.html">Contact</a>
+		<a class="one" href="https://cabletwo.bigcartel.com" target="_blank">Shop</a>
+		<a class="icon" href="javascript:void(0);" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+	</div>
+
+	<div id="marquee">
+		<div class="ticker"><p>Check this out:</p></div>
+	</div>
+	
+	<div class="bottomnav">
+		<a href="sitemap.html" target="_blank">Site Map</a>
+	</div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<body>
+<h1> It's Cable Two.</h1>
+
+<div class="background">
+
+<div class="player">
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "cabletwo",
+		muted: true,
+		theme: "dark",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+  </body>
+
+</div>
+</div>
+
+<p>Cable Two is a network of creative people working together to explore the possibilities of live video as a medium.
+<br>Cable Two is a media project, it's a collaborative community, it's a place.
+<br>All you have to do to get involved is say hi.
+</p>
+
+</body>
+
+
+</html> 
