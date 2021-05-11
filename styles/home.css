@@ -6,19 +6,15 @@ body {
 		margin: 0;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		padding-bottom: 50px;
-}/
-
+		padding-bottom: 100px;
+}
 
 /* responsive navigation bar */
-
-.navbar {
-margin: 1%;	
-}	
 
 .topnav {
   overflow: hidden;
   background-color: black;
+  width: 100%;
 }
 
 .topnav img {
@@ -68,6 +64,7 @@ margin: 1%;
 	font-size: 17px;
 	background-color: black;
 }
+
 
 /* rainbow ticker */
 
@@ -138,6 +135,44 @@ margin: 1%;
 	to {left: 200px; }
 }
 
+/* content styles */
+
+.background {
+	width: 1000px;
+	margin: auto;
+	padding-left: 2%;
+}
+
+.content {
+margin: 1%;
+}
+
+h1 {
+	font-family: 'Syne Mono', serif;
+	color: white;
+	text-align: left;
+	font-size: 250%;
+	padding-left: 2%;
+	text-shadow: 2px 2px 5px black;
+}
+
+.content p {
+	font-family: 'Nanum Gothic Coding', monospace;
+	text-shadow: 2px 2px 5px black;
+	color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.content a {
+	color:  #33ff77;
+}
+
+.bottomtext p {
+padding: 2%
+}
+
+
 /* footer */
 
 .bottomnav {
@@ -165,64 +200,15 @@ margin: 1%;
 	color: black;
 }
 
-.background {
-	width: 1000px;
-	margin: auto;
-	padding-left: 3%;
-}
 
-h1 {
-	font-family: 'Syne Mono', serif;
-	color: white;
-	text-align: left;
-	font-size: 250%;
-	padding-left: 3%;
-	text-shadow: 2px 2px 5px black;
-}
 
-p {
-	font-family: 'Nanum Gothic Coding', monospace;
-	color: white;
-	text-align: left;
-	font-size: normal;
-	padding: 3%;
-	text-shadow: 2px 2px 5px black;
-}
-
-.textbox {
-	padding-left: 3%;
-	padding-right: 3%;
-	padding-top: 2%;
-	padding-bottom: 3%;
-	background-color: black;
-	width: 70%;
-	margin: auto;
-	margin-top: 3%;
-}
-
-.textbox h1 {
-	font-family: monospace;
-	text-size: large;
-}
-
-.textbox p {
-	font-family: monospace;
-	text-size: normal;
-}
-
-.textbox a {
-	color:  #33ff77;
-}	
-
-/* responsive HELLO SHEDA */
+/* responsive navbar */
 
 @media screen and (max-width: 1200px) {
 	.background {
 	width: 720px;
 	}
 }
-
-/* responsive navbar HELLO SHEDA */
 
 @media screen and (max-width: 768px) {
 	.topnav a.one:not(:first-child) {
@@ -236,6 +222,8 @@ p {
 	width: 90%;
 	margin: auto;
 	}
+}
+
 
 @media screen and (max-width: 768px) {
 	.topnav.responsive {position: relative;}
