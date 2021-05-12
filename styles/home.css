@@ -144,8 +144,27 @@ body {
 }
 
 .content {
-margin: 1%;
+	margin: 1%;
 }
+
+flexbox {
+	display: flex;
+	align-items: center;
+	flex-flow: row;
+}
+
+zone1 {
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+}
+
+zone2 {
+	flex: 2;
+	display: flex;
+	flex-flow: column;
+}
+
 
 h1 {
 	font-family: 'Syne Mono', serif;

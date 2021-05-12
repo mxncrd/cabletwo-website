@@ -138,34 +138,6 @@ margin: 1%;
 	to {left: 200px; }
 }
 
-/* footer */
-
-.bottomnav {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	overflow: hidden;
-	background-color: black;
-}
-
-.bottomnav a {
-	float: left;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-family: 'Syne Mono', monotype;
-	font-size: 17px;
-	background-color: black;
-}
-
-.bottomnav a:hover {
-	background-color: #ddd;
-	color: black;
-}
-
-
 /* form background */
 
 .background {
@@ -243,14 +215,41 @@ padding: 2%
 }
 
 
+/* footer */
+
+.bottomnav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: black;
+}
+
+.bottomnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Syne Mono', monotype;
+	font-size: 17px;
+	background-color: black;
+}
+
+.bottomnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+
+/* responsive navbar */
 
 @media screen and (max-width: 1200px) {
 	.background {
 	width: 720px;
 	}
 }
-
-/* responsive navbar HELLO SHEDA */
 
 @media screen and (max-width: 768px) {
 	.topnav a.one:not(:first-child) {
