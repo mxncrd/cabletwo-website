@@ -48,38 +48,43 @@ function myFunction() {
 
 <body>
 <div class="content">  
-<h1> Only on, always on.</h1>
-<flexbox>
-<div class="background">
+    <h1>Only on, always on.</h1>
 
-<zone1>
-<p>
-  <br><br>Cable Two is a network of creative people working together to explore the possibilities of live video as a medium.
-  <br>Cable Two is a media project, it's a collaborative community, it's a place.
-  <br>All you have to do to get involved is say hi.
-</p>
-</zone1>
+<div class="flexbox">
 
-<zone2>
-<div class="player">
-    <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
+  <div class="box1">
+    <p>
+      Cable Two is a collaborative television network with a decentralized community structure.
+      <br><br>It's a media project, it's a creative community, it's a place. 
+      <br><br>All you have to do to get involved is say hi.
+    </p>
+  </div>
 
-    <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+<div class="twitch">
+  <div class="twitch-video">
+    <iframe
+      src="https://player.twitch.tv/?channel=cabletwo&parent=cabletwo.tv&autoplay=false"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen="true"
+      height="100%"
+      width="100%">
+    </iframe>
+  </div>
+  <div class="twitch-chat">
+    <iframe
+      frameborder="0"
+      scrolling="no"
+      src="https://www.twitch.tv/embed/cabletwo/chat?parent=cabletwo.tv"
+      height="100%"
+      width="100%">
+    </iframe>
+  </div>
+</div>
 
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "cabletwo",
-		muted: true,
-		theme: "dark",
-    });
-    </script>
-</div></div></zone2></div></flexbox>
+</div></div>
 
+<iframe src="https://www.cabletwo.tv"></iframe>
 </body>
 
 

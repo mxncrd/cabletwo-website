@@ -137,34 +137,28 @@ body {
 
 /* content styles */
 
-.background {
-	width: 1000px;
-	margin: auto;
-	padding-left: 2%;
+.flexbox {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	flex-flow: row wrap-reverse;
+}
+
+.box1 {
+	flex: 1 200px;
+	max-width: 200px;
+	background: rgba(0,0,0,0.7);
+}
+
+.player {
+	flex: 2 500px;
+	min-height: 800px;
+	max-width: 75%;
 }
 
 .content {
 	margin: 1%;
 }
-
-flexbox {
-	display: flex;
-	align-items: center;
-	flex-flow: row;
-}
-
-zone1 {
-	flex: 1;
-	display: flex;
-	flex-flow: column;
-}
-
-zone2 {
-	flex: 2;
-	display: flex;
-	flex-flow: column;
-}
-
 
 h1 {
 	font-family: 'Syne Mono', serif;
@@ -224,9 +218,7 @@ padding: 2%
 /* responsive navbar */
 
 @media screen and (max-width: 1200px) {
-	.background {
-	width: 720px;
-	}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -237,10 +229,7 @@ padding: 2%
 		float: right;
 		display: block;
 	}
-	.background {
-	width: 90%;
-	margin: auto;
-	}
+
 }
 
 
