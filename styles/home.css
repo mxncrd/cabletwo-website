@@ -152,8 +152,7 @@ body {
 
 .player {
 	flex: 2 500px;
-	min-height: 800px;
-	max-width: 75%;
+	max-width: 50%;
 }
 
 .content {
