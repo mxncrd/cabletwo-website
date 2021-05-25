@@ -153,7 +153,7 @@ body {
 .parent { /* flexbox parent */
 	display: flex;
 	flex-flow: row wrap;
-	gap: 10px;
+	gap: 20px;
 }
 
 
