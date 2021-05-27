@@ -15,18 +15,25 @@ body {
 	        rgba(186, 12, 248, 1) 80%,
 	        rgba(251, 7, 217, 1) 90%,
 	        rgba(255, 0, 0, 1) 100%);
-		background-attachment: fixed;
 		height: 100%;
 		margin: 0;
+		position: relative;
+		top: 67px;
 	}
 
 
 /* responsive navigation bar */
 
+.fixnav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 .topnav {
-  overflow: hidden;
-  background-color: black;
-  width: 100%;
+  	overflow: hidden;
+  	background-color: black;
+  	width: 100%;
 }
 
 .topnav img {
@@ -98,7 +105,6 @@ body {
 }
 
 .ticker {
-	
 	font-size: small;
 	font-family: 'Syne Mono', serif;
 	height:15px; 
@@ -244,15 +250,15 @@ body {
 }
 
 	.schedulebox h2 { /* title */
-		font-family: 'IBM Plex Mono', monospace;
-		font-weight: 400;
-		font-style: italic;
-		color: white;
+		font-family: 'IBM Plex Mono Ital', monospace;
+		font-weight: 1,400;
+		text-align: center;
+		color: cyan;
 		font-size: 125%;
-		margin: 1em;
+
 		padding: 0.5em;
-		width: 9em;
-		background-image: linear-gradient(90deg,blue, rgba(0,0,0,0) 65%);
+		width: 6em;
+		border-bottom: 1px solid lightgrey;
 }
 
 	.schedulebox p {
@@ -266,6 +272,9 @@ body {
 
 	.schedulebox ul {
 		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 6px;
 	}
 
 	.schedulebox li { /* text in second box */
@@ -277,7 +286,7 @@ body {
 		border-right: 1px solid darkred;
 		margin-left: 2em;
 		padding: 0.5em;
-					background-color: black;
+					background-color: rgba(48,48,48,0.85);
 }
 
 		.friday {
