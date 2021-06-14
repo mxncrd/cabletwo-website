@@ -258,6 +258,12 @@ body ul, li {
 	        rgba(255, 0, 0, 1) 100%) 10;
 }
 
+	.newsbox h2 {
+		font-family: 'IBM Plex Mono', monospace;
+		font-weight: 400;
+		color: white;
+		font-size:  medium;
+	}
 	.newsbox img {
 		width:  100%;
 	}
@@ -268,11 +274,13 @@ body ul, li {
 		font-size: small;
 		font-style: italic;
 		color: white;
-		text-align: right;
 	}
 
 	.newsbox a {
-
+		font-family: 'IBM Plex Mono', monospace;
+		font-weight: 400;
+		font-size: small;
+		background-color:  cyan;
 	}
 
 
@@ -370,6 +378,38 @@ body ul, li {
 	top: 0
 	left: 0;
 }
+
+
+.pitch-form a {
+	color:  #33ffaa;
+}
+
+.form-group input {
+	font-family: 'IBM Plex Mono', monospace;
+	background: black;
+	color: white;
+	margin-bottom: 4%;
+	margin-left: 5%;
+	width: 300px;
+	padding: 1%;
+}
+
+.form-group textarea {
+	font-family: 'IBM Plex Mono', monospace;
+	background: black;
+	color: white;
+	padding: 1%;
+	margin-bottom: 4%;
+	margin-left: 5%;
+	width: 450px;
+}
+
+.form-group p {
+	font-family: 'IBM Plex Mono', monospace;
+	text-shadow: 2px 2px 5px black;
+	color: white;
+}
+
 
 
 /* footer */
