@@ -280,7 +280,14 @@ body ul, li {
 		font-family: 'IBM Plex Mono', monospace;
 		font-weight: 400;
 		font-size: small;
-		background-color:  cyan;
+		background-color: slategrey;
+		color: lightgreen;
+		padding: 2px 3px;
+	}
+
+	.newsbox a:hover {
+		background-color:  lightgreen;
+		color:  slategrey;
 	}
 
 
