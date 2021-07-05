@@ -159,6 +159,30 @@ body ul, li {
 	to {left: 200px; }
 }
 
+/* hashlinks */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.headerbox h1::before { /* #Home */ 
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.newsbox h1::before { /* #Contact */
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
 
 /* page content */
 
@@ -169,10 +193,17 @@ body ul, li {
 	gap: 30px;
 }
 
+.child1 img {
+display: block;
+margin:  auto;
+max-width: 100%;
+height: auto;
+}
 
 .child1 {
 	flex-flow: column;
 	order: 1;
+	justify-content: center;
 }
 
 .child2 {
@@ -382,8 +413,9 @@ body ul, li {
 	width: 640px;
 	height: 360px;
 	position: absolute;
-	top: 0
+	top: 0;
 	left: 0;
+	content-security-policy: frame-src youtube.com www.youtube.com;
 }
 
 
