@@ -21,6 +21,7 @@ body {
 		background-position:left 67px;
 		background-attachment: fixed;
 		margin-top: 92px;
+		color:  white;
 	}
 
 body ul, li {
@@ -175,7 +176,43 @@ html {
   pointer-events: none;
 }
 
+.newsbox h1::before { /* #News */
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.schedulebox h1::before { /* #Shows */
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
 .newsbox h1::before { /* #Contact */
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.newsbox h1::before { /* #Pitch */
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.schedulebox h1::before { /* #Shop */
   display: block; 
   content: " "; 
   margin-top: -150px; 
@@ -192,6 +229,9 @@ html {
 	flex-flow: row wrap;
 	justify-content: center;
 	gap: 30px;
+	margin:  auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .child1 img {
@@ -238,6 +278,7 @@ height: auto;
 	margin: 30px;
 }
 
+
 	.headerbox p { /* text in second box */
 		font-family: 'IBM Plex Mono', monospace;
 		font-weight: 400;
@@ -250,11 +291,11 @@ height: auto;
 		font-weight: 500;
 		background-image: linear-gradient(45deg,
 			red,
-		    rgb(255, 95, 0, 1) 15%,
-	        rgba(255, 154, 0, 1) 50%,
-	        rgb(214, 242.25, 0, 1) 100%);
+		  rgb(255, 95, 0, 1) 15%,
+	    rgba(255, 154, 0, 1) 50%,
+	    rgb(214, 242.25, 0, 1) 100%);
 		color: black;
-		padding-left: 1px;
+		padding-left: 2px;
 		padding-right: 3px;
 	}
 
@@ -303,15 +344,15 @@ height: auto;
 	.newsbox p {
 		font-family: 'IBM Plex Mono', monospace;
 		font-weight: 400;
-		font-size: small;
-		font-style: italic;
+		font-size: normal;
+
 		color: white;
 	}
 
 	.newsbox a {
 		font-family: 'IBM Plex Mono', monospace;
 		font-weight: 400;
-		font-size: small;
+		font-size: normal;
 		background-color: slategrey;
 		color: lightgreen;
 		padding: 2px 3px;
@@ -322,6 +363,17 @@ height: auto;
 		color:  slategrey;
 	}
 
+	.newsbox mark {
+		font-weight: 500;
+		background-image: linear-gradient(45deg,
+			red,
+		  rgb(255, 95, 0, 1) 15%,
+	    rgba(255, 154, 0, 1) 50%,
+	    rgb(214, 242.25, 0, 1) 100%);
+		color: black;
+		padding-left: 2px;
+		padding-right: 3px;
+	}
 
 .schedulebox { /* front page schedule */
 	order:  2;
@@ -398,6 +450,19 @@ height: auto;
 		background-color: rgba(48,48,48,0.85);
 	}
 
+	.schedulebox a {
+		font-family: 'IBM Plex Mono', monospace;
+		font-weight: 400;
+		font-size: normal;
+		color: lightgreen;
+		text-align: center;
+	}
+
+	.schedulebox a:hover {
+		background-color:  lightgreen;
+		color:  slategrey;
+	}
+
 
 .vidbox { /* arby's youtube video */
 	order: 2;
@@ -408,21 +473,20 @@ height: auto;
     overflow: hidden;
     border: 8px ridge silver;
     box-shadow: 6px 6px rgba(0,0,0,0.3);
+    z-index:-1;
 }
 
-.vidbox iframe, .vidbox object, .vidbox embed {
-	width: 640px;
-	height: 360px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	content-security-policy: frame-src youtube.com www.youtube.com;
+.vidbox2 { /* arby's youtube video */
+    position: relative;
+    height: 169px;
+    width: 300px;
+    max-width: 100%;
+    overflow: hidden;
+    border: 8px ridge silver;
+    box-shadow: 6px 6px rgba(0,0,0,0.3);
+    z-index:-1;
 }
 
-
-.pitch-form a {
-	color:  #33ffaa;
-}
 
 .form-group input {
 	font-family: 'IBM Plex Mono', monospace;
@@ -446,41 +510,37 @@ height: auto;
 
 .form-group p {
 	font-family: 'IBM Plex Mono', monospace;
-	text-shadow: 2px 2px 5px black;
 	color: white;
 }
 
-
-
-/* footer */
-
-.bottomnav {
-	position: absolute;
-	bottom: 0;
-	margin-top: 100px;
-	width: 100%;
-	overflow: hidden;
-	background-color: black;
+.footer {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
 }
-
-.bottomnav a {
-	float: left;
+img {
 	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-family: 'Syne Mono', monotype;
-	font-size: 17px;
-	background-color: black;
+	margin:  auto;
+	max-width: 100%;
+	height: auto;
 }
 
-.bottomnav a:hover {
-	background-color: #ddd;
-	color: black;
+.footer p{
+		font-family: 'IBM Plex Mono', monospace;
+		font-weight: 400;
+		font-size: larger;
+		font-style: italic;
+		color: white;
+		text-align: right;
+		background-color: black;
+		padding: 2px;
+	}
+
+.spacer2 { /* footer spacer */
+	margin: 100px;
 }
-
-
 
 /* responsive navbar */
 

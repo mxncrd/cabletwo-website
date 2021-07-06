@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html Content-Security-Policy: default-src 'none';
-   frame-src youtube.com www.youtube.com;>
+<html>
 <head>
 
 	<title>It's Cable Two</title>
@@ -28,11 +27,11 @@
   <div class="topnav" id="myTopnav">
 		<a class="two" href="#Home"><img src="images/logo-trans.png" alt="Logo"></a></img>
 		<a class="active" href="#Home">Home</a>
-    <a class="one" href="#Shows">Shows</a>
     <a class="one" href="#News">News</a>
+    <a class="one" href="#Contact">Contact</a>
+    <a class="one" href="#Shows">Shows</a>
 		<a class="one" href="#Pitch">Pitch</a>
-		<a class="one" href="#Contact">Contact</a>
-		<a class="one" href="https://cabletwo.bigcartel.com" target="_blank">Shop</a>
+		<a class="one" href="#Shop">Shop</a>
 		<a class="icon" href="javascript:void(0);" onclick="myFunction()">
     <i class="fa fa-bars"></i></a>
   </div>
@@ -68,7 +67,7 @@ function myFunction() {
   <div class="spacer"></div>
     
     <div class="headerbox">
-      <p><mark>Cable Two</mark> is a cooperative television network run by a community of artists, creators, and passionate souls.<br><br>It's an ongoing experiment in online collaboration. It's a friendly, welcoming community. It's a place.<br><br>All you have to do to get involved is say hi.</p>
+      <p><mark>Cable Two</mark> is a cooperative television network run by a community of artists, creators, and passionate souls.<br><br>It's an ongoing experiment in online collaboration.<br><br>It's a friendly internet community.<br><br>It's a place.<br><br>All you have to do to get involved is say hi.</p>
     </div>
 
   <div class="spacer"></div>
@@ -79,16 +78,19 @@ function myFunction() {
 
   <div class="child2">
     <div class="vidbox">
-      <iframe src='https://www.youtube.com/watch?v=RzKADK1HPhs' frameborder='0' allowfullscreen></iframe></div>
+      <video controls width="100%" height="100%" poster="images/trailer7.png">
+        <source src="images/trailer.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+       </video></div>
     
 <div class="spacer"></div>
      
     <div class="newsbox"> <!--- News ---> 
 
-        <h1>What's new?</h1>
+        <h1 id="News">What's new?</h1>
           <img src="images/dogdays.png"></img>
-            <p>Cable Two's Dog Days of Summer</p>
-            <a href=bigcartel.cabletwo.com>description/link goes here</a>
+            <p><i>Stay Cool:</i> Cable Two's <mark>Dog Days of Summer</mark> is a weekend marathon of summer-and/or-dog-themed streams. Don't forget sunscreen.
+            <br><br><a href=https://twitter.com/cabletwotv>Follow us on Twitter</a> for Dog Days updates as well as "Beat the Heat" Summer Tips and Tricks such as: <i>"put ice cubes in your drink to make it colder."</i></p>
       </div>
     </div>
 </div>
@@ -97,22 +99,32 @@ function myFunction() {
 
 <div class="parent">
   <div class="child2">
+
+    <div class="vidbox2">
+      <video controls width="100%" height="100%" poster="images/rainy.png">
+        <source src="images/rainy.webm" type="video/webm">
+        Sorry, your browser doesn't support embedded videos.
+       </video></div>
+<div class="spacer"></div>
+
     <div class="schedulebox"> <!--- Schedule --->
+
       <div class="schedule">
         <h1 id="Shows">This Week</h1>
         <p>all times US Central (GMT-6)</p>
 
+          <h2>Tuesday</h2>
+            <ul>
+              <li>Random Access<br>🥪 ⸻ 5pm</li>
+              <li>Perennial Stream<br>🌄 ⸻ 6pm</li>
+              <li>Dead Channel<br>👻 ⸻ 7pm</li>
+            </ul>
+
           <h2>Friday</h2>
             <ul>
               <li>Coffee.sip<br>☕ ⸻ 12pm</li>
-              <li>Gamer's Delight<br>🥪 ⸻ 5pm</li>
-              <li>Empty Jar<br>⚱️ ⸻ 7pm</li>
-            </ul>
-
-          <h2>Saturday</h2>
-            <ul>
-              <li>Brave Zulnutt<br>📺 ⸻ 7pm</li>
-              <li>Stone & Urodov<br>🤺 ⸻ 9pm</li>
+              <li>Violent Videogames<br>🚬 ⸻ 6pm</li>
+              <li>Empty Jar<br>⚱️ ⸻ 8pm</li>
             </ul>
 
           <h2>Sunday</h2>
@@ -120,11 +132,23 @@ function myFunction() {
               <li>Coffee.sip<br>☕ ⸻ 12pm</li>
               <li>Multiverse<br>🌌 ⸻ 1pm</li>
               <li>Warp Zone<br>🌠 ⸻ 5pm</li>
-              <li>Fantasy Flight<br>✈ ⸻ 9pm</li>
             </ul>
-      </div>
     </div>
   </div>
+
+<div class="spacer"></div>
+
+  <div class="schedulebox"> <!--- Shop --->
+    <div class="schedule">
+      <h1 id="Shop">Shop C2</h1>
+      <a href="https://bigcartel.cabletwo.com">
+        <img src="images/cube.gif" title="The Cube of Merchandise">
+      </a>
+      <br><br>
+      <a href="https://bigcartel.cabletwo.com">If You Buy Our Lifestyle Merchandise,You Will Live Forever</a>
+    </div>
+  </div>
+</div>
 
   <div class="child1">
     <div class="newsbox"> <!--- Contact --->
@@ -136,16 +160,16 @@ function myFunction() {
       <br><br><br><a href="https://discord.gg/tGdpxnK">Join our Discord!</a> This is where we communicate and hang out as a team. Come say hi!<br>
 
       <br><br>Follow us on:</p>
-        <br><a href="https://twitch.tv/cabletwo">Twitch</a>
-        <br><br><a href="https://twitter.com/cabletwotv">Twitter</a>
-        <br><br><a href="https://instagram.com/cabletwo">Instagram</a>
-        <br><br><a href="https://www.youtube.com/channel/UCFrGLEjM802PNjTujlk6xmg">Youtube</a>
+        <a href="https://twitch.tv/cabletwo">👾 Twitch</a>
+        ▪ <a href="https://twitter.com/cabletwotv">🐦 Twitter</a>
+        ▪ <a href="https://instagram.com/cabletwo">📸 Instagram</a>
+        ▪ <a href="https://www.youtube.com/channel/UCFrGLEjM802PNjTujlk6xmg">📺 Youtube</a><br>
     </div>
 
 <div class="spacer"></div>
 
       <div class="newsbox"> <!--- Pitch --->
-          <h1>Want to stream?</h1>
+          <h1 id="Pitch">Want to stream?</h1>
         <form action="https://formsubmit.co/52a5e5181a42f2dd4b414f9b16bdb69e" method="POST" />
       <div class="background">
       <div class="form-group">
@@ -161,13 +185,25 @@ function myFunction() {
           <textarea placeholder="Describe your stream idea. It doesn't have to be a fully finished concept - we’d love to help you develop your idea, both conceptually and technically." class="form-control" name="message" rows="10" required></textarea>  
         <h2>Visuals & Other Media</h2>
           <textarea placeholder="This part is optional, but encouraged. Please attach links to any relevant visuals, images, videos, or any other type of media. Example: Title cards, overlay mockups, moodboards, inspiration, and video demonstrations of your stream." class="form-control" name="message" rows="10" required></textarea>
-          <br><p>Please read our <a href="release.html" target="_blank">terms and conditions</a> before submitting.
-            <br><br>By clicking “SUBMIT FORM”, you agree to have read, understand, and agree to the terms and conditions.
-        <br><br><button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-        <br><br>That’s it! Thank you for submitting to Cable Two.<br><br><br></p>
+          <br><p>Please read our <a href="release.html" target="_blank">Terms and Conditions</a> before submitting.<br><br>
+<button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
+        <br><br>That’s it! Thank you! We try to respond quickly to pitches. If you haven't heard back from us, you can always <a href="#Contact">send us a message.</a><br><br><br></p>
       </div></div></form> 
     </div>
   </div>
 </div>
+
+
+<div class="spacer2"></div>
+
+<div class="footer">
+  <div class="one"><p>Only on,</p></div>
+  <div class="two"><img src="images/sphere.gif"></img></div>
+  <div class="three"><p>always on.</p></div>
+</div>
+
+<div class="spacer2"></div>
+
+
 </body>
 </html> 
