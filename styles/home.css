@@ -58,11 +58,9 @@ body ul, li {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
 	font-family: 'Syne Mono', monotype;
 	font-size: 17px;
-	background-color: rgba(18,19,193,1);
 	color: white;
 }
 
@@ -531,7 +529,7 @@ img {
 }
 
 
-/* responsive navbar */
+/* responsive body */
 
 @media screen and (max-width: 1024px) {
 	.vidbox {
@@ -551,6 +549,8 @@ img {
 	}
 }
 
+
+/* responsive navbar */
 
 @media screen and (max-width: 500px) {
 	.topnav a.one:not(:first-child) {
@@ -578,7 +578,7 @@ img {
 	}
 	.topnav.responsive a.active {
 		float: none;
-		display: block;
+		display: none;
 		text-align: left;
 	}
 	.ticker p {
