@@ -543,9 +543,11 @@ img {
 
 	.form-group textarea {
 		width: 220px;
+				margin: auto;
 	}
 	.form-group input {
 		width: 220px;
+				margin: auto;
 	}
 }
 
